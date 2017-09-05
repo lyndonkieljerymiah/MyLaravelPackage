@@ -1,0 +1,8 @@
+{
+    "name": "kielster/my-laravel-package",
+    "autoload": {
+        "psr-0" : {
+            "MyPackage\\Supports" : "Supports"
+        }
+    }
+}
