@@ -8,8 +8,8 @@
         }
     ],
     "autoload": {
-        "psr-0" : {
-            "MyPackage\\Supports" : "src/"
+        "psr-4" : {
+            "MyPackage\\Supports" : "src/Supports"
         }
     },
     "require": {
