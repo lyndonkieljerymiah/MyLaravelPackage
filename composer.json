@@ -15,4 +15,10 @@
     "require": {
         "php": ">=5.6.0"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/lyndonkieljerymiah/MyLaravelPackage.git"
+        }
+    ],
 }
