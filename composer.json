@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "psr-4" : {
-            "MyPackage\\Supports" : "src/Supports"
+            "Supports\\" : "src/Supports"
         }
     },
     "require": {
