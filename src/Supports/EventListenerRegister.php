@@ -1,6 +1,6 @@
 <?php
 
-namespace MyPackage\Supports;
+namespace Supports;
 
 
 class EventListenerRegister

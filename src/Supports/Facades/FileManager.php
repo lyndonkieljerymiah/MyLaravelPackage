@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MyPackage\Supports\Facades;
+namespace Supports\Facades;
 
 
 use Illuminate\Support\Facades\Facade;

@@ -1,6 +1,6 @@
 <?php
 
-namespace MyPackage\Supports\Traits;
+namespace Supports\Traits;
 
 
 trait ArrayTrait

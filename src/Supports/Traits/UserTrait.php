@@ -1,7 +1,7 @@
 <?php 
 
 
-namespace MyPackage\Traits;
+namespace Supports\Traits;
 
 
 use Illuminate\Support\Facades\Auth;

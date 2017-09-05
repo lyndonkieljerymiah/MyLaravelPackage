@@ -1,6 +1,6 @@
 <?php
 
-namespace MyPackage\Supports;
+namespace Supports;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;

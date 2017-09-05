@@ -21,5 +21,10 @@
             "url": "https://github.com/lyndonkieljerymiah/MyLaravelPackage.git"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "providers": [
+            "Supports\\Providers\\SupportProvider"
+        ]
+    }
 }

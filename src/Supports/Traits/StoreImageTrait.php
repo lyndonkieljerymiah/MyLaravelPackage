@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MyPackage\Supports\Traits;
+namespace Supports\Traits;
 
 use MyPackage\Supports\FileManager;
 

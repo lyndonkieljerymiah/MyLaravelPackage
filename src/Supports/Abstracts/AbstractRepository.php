@@ -1,6 +1,6 @@
 <?php
 
-namespace MyPackage\Supports\Abstracts;
+namespace Supports\Abstracts;
 
 use Carbon\Carbon;
 
