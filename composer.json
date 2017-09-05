@@ -25,6 +25,12 @@
     "extra": {
         "providers": [
             "Supports\\Providers\\SupportProvider"
-        ]
+        ],
+        "aliases":{
+            "Bundle": "Supports\\Facades\\Bundle",
+            "EventListenerRegister": "Supports\\Facades\\EventListenerRegister",
+            "FileManager": "Supports\\Facades\\FileManager",
+            "Result": "Supports\\Facades\\Result"
+        }
     }
 }
