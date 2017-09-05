@@ -28,3 +28,8 @@ trait DeserializeImageTrait
         }
         return null;
     }
+
+    public function getMediaFiles(Array $mediaIds = array()) 
+    {
+        return array();
+    }
