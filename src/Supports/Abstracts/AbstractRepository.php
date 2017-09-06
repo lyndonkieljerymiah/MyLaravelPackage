@@ -3,8 +3,12 @@
 namespace Supports\Abstracts;
 
 use Carbon\Carbon;
+use Supports\Traits\PaginationTrait;
 
 abstract class AbstractRepository {
+
+    use PaginationTrait;
+
 
     protected $model;
     
@@ -37,10 +41,10 @@ abstract class AbstractRepository {
     }
 
     public function getAll() {
-        $result = $this->model->all();
-        $this->model = $this->definedModel();
-        return $result;
+        return $this->model->all();
     }
+
+    
 
     public function getWithLimit($limit) {
 
@@ -49,10 +53,7 @@ abstract class AbstractRepository {
     }
 
     public function get() {
-
-        $result = $this->model->get();
-        $this->model = $this->definedModel();
-        return $result;
+        return $this->model->get();
     }
 
     public function single() {
@@ -60,15 +61,11 @@ abstract class AbstractRepository {
     }
 
     public function instance() {
-        $model = $this->model;
-        $this->model = $this->definedModel();
-        return $model;
+        return $this->model;
     }
 
-    public function paginate($pageSize) {
-
-        $this->model = $this->model->paginate($pageSize);
-        return $this->model;
+    public function paginate($pageSize,$callback = null) {
+        return $this->createPagination($this->model,$callback,$pageSize);
     }
 
     public function find($id){

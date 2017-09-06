@@ -13,7 +13,8 @@
         }
     },
     "require": {
-        "php": ">=5.6.0"
+        "php": ">=5.6.0",
+        "kielster/my-laravel-package": "@dev"
     },
     "repositories": [
         {
