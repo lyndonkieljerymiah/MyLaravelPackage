@@ -3,7 +3,7 @@
 namespace Supports\Abstracts;
 
 
-use MyPackage\Supports\Traits\UserTrait;
+use Supports\Traits\UserTrait;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
