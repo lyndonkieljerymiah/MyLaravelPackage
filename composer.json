@@ -1,6 +1,7 @@
 {
     "name": "kielster/my-laravel-package",
     "version": "0.2.1",
+    "license": "ME",
     "authors": [
         {
             "name": "Arnold Mercado",
