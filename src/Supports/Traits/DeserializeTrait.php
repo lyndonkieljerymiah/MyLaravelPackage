@@ -2,7 +2,7 @@
 
 namespace Supports\Traits;
 
-trait DeserializeImageTrait
+trait DeserializeTrait
 {
 
     public function setMetaValue(&$meta,$values,$unserializeable = false) {
@@ -29,7 +29,5 @@ trait DeserializeImageTrait
         return null;
     }
 
-    public function getMediaFiles(Array $mediaIds = array()) 
-    {
-        return array();
-    }
+ 
+}
