@@ -23,7 +23,7 @@ trait PaginationTrait {
         ];
     }
 
-    public function createPagination(&$model,$callback = null,$params = array(),$pageCount = 20) {
+    public function createPagination(&$model, $callback = null, $params = array(), $pageCount = 20) {
 
         $data = $model->paginate($pageCount);
 

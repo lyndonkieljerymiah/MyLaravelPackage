@@ -68,7 +68,7 @@ abstract class AbstractRepository {
         return $this->createPagination($this->model,$callback,$pageSize);
     }
 
-    public function find($id){
+    public function find($id) {
         return $this->model->find($id);
     }
 
@@ -85,7 +85,9 @@ abstract class AbstractRepository {
     }
 
     public function includes(Array $includeNodes = array()) {
+        
         $this->model = $this->model->with($includeNodes);
+        
         return $this;
     }
 
@@ -106,6 +108,7 @@ abstract class AbstractRepository {
         else {
             $state = "create";
         }
+        
         try {
             if($state == "create") {
                 $this->beforeCreate($model);
@@ -121,6 +124,7 @@ abstract class AbstractRepository {
                 $this->afterCreate($this->model,$children);
             }
             else if($state == "modify") {
+
                 $this->beforeUpdate($model);
                 $this->model = $this->model->find($model['id']);
                 $this->model->toMap($model);
@@ -134,7 +138,9 @@ abstract class AbstractRepository {
             }
         }
         catch(Exception $e) {
+            
             throw new Exception($e->getMessage());
+
         }
 
         return $this;

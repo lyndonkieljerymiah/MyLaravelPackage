@@ -37,6 +37,7 @@ class Bundle
     }
 
     public function clearAll() {
+        
         $this->bundles = array();
         $this->outputs = array();
     }
